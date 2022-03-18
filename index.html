@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea7d814db1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Expenses app</title>
+</head>
+<body>
+    <main>
+        <!-- the left section where the user enter his budget and expenses information -->
+        <section class="grap-info">
+            <div class="budget">
+                <div id="budget-error" class="error hide"> Stop that shit Enter correct budget </div>
+                <form class="gudget-form" >
+                    <h2>Add Your Budget</h2>
+                    <input class="budget-input" type="tex" placeholder="your budget">
+                    <button class="budget-submit submit"> Add Budget </button>
+                </form>
+            </div>
+            <div class="expense">
+                <div id="expense-error" class="error hide"> Shit you enter incorrect data, make sure to fill poth feilds </div>
+                <form class="expenses-form">
+                    <h2>Add Your Expenses</h2>
+                    <p>Title</p>
+                    <input class="title-input" type="text" placeholder="Title...">
+                    <p>Amount</p>
+                    <input class="amount-input" type="text" placeholder="Amount...">
+                    <button class="expense-submit submit"> Add expense </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- the right section where the user can see his palance and expense details-->
+        <section class="show-info">
+            <!-- show the amount of many they have and how much they spent and the budget-->
+            <div class="user-state">
+                <span>
+                    <p>Budget</p>
+                    <i class="fa-solid fa-money-bill-1 "></i>
+                    <p class="total-budget">0</p>
+                </span>
+                <span>
+                    <p>Expenses</p>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <p class="total-expenses">0</p>
+                </span>
+                <span>
+                    <p>Balance</p>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p class="total-balance">0</p>
+                </span>
+            </div>
+            <!-- display all the expense information and ability to edit and remove each one -->
+            <div class="expenses-list">
+                <div class="ex-header">
+                    <p>Expense Title</p>
+                    <p>Expense Amount</p>
+                </div>
+
+                <div class="all-expenses">
+                    <div class="empty active">
+                        <h3>Add expense to show here</h3>
+                    </div>
+                    <!-- <div class="list">
+                            <div class="ex-detail">
+                                <span class="title">test</span>
+                                <span class="amount"> 300 </span>
+                            </div>
+                            
+                            <div class="icons">
+                                <i class="fa-solid fa-pen-to-square edit"></i>
+                                <i class="fa-solid fa-trash-can trash"></i>
+                            </div>
+                    </div>      -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
+

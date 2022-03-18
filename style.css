@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+body{
+    height: 100vh;
+    background: rgba(238, 238, 238, 0.795);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(85, 85, 85);}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+/* END gloabal style */
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: fit-content;
+    padding: 10px;
+    margin: 0px 0px 20px 20px ;
+    border: 2px solid rgb(236, 43, 43);
+    border-radius: 5px;
+    background: rgba(255, 120, 120, 0.63);
+    transition: all 0.4s ease-in-out;
+}
+
+.budget div{
+    transition: all 0.4s ease-in-out;
+}
+
+.grap-info{
+    padding-left: 100px;
+}
+.grap-info .budget form{
+    width: 70%;
+    height: fit-content;
+    border: 2px solid rgb(59, 221, 59);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0px 20px 20px;
+}
+
+.budget-input{
+    display: block;
+    margin: 20px 0px;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid rgba(172, 255, 147, 0.651);
+    border-radius: 5px;
+    outline: none;
+}
+button{
+    color: rgb(85, 85, 85);
+}
+
+.submit{
+    position: relative;
+    left: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(149, 223, 127);
+    transition: all 0.4s ease-in-out;
+}
+.submit:hover{
+    background: rgb(172, 255, 147);
+    cursor: pointer;
+}
+
+.expense form{
+    width: 70%;
+    height: fit-content;
+    border: 2px solid rgb(214, 92, 92);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0px 20px 20px;
+}
+
+.expense form p{
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.expense form input{
+    display: block;
+    margin: 20px 0px;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid rgba(255, 132, 132, 0.651);
+    border-radius: 5px;
+    outline: none;
+}
+
+.submit{
+    position: relative;
+    left: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+.expense form button{
+    border: 1px solid rgb(223, 127, 127);
+}
+.expense form button:hover{
+    background: rgba(255, 132, 132, 0.651);
+    cursor: pointer;
+}
+
+/* End of the first section the right section  */
+
+/* section two */
+i{
+    font-size: 3em;
+    margin: 5px 0px;
+    transition: all 0.2s ease-in-out;
+}
+i:hover{
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+.trash{
+    color: rgb(228, 101, 101)
+}
+
+.all-expenses .list i{
+    font-size: 1.5em;
+    margin: 0px 3px;
+}
+
+.show-info{
+    padding-top: 100px;
+}
+
+.show-info .user-state{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: fit-content;
+    padding: 20px;
+}
+
+.user-state span{
+    width: fit-content;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.total-budget,.total-expenses,.total-balance{
+    font-size: 30px;
+}
+.total-budget::before,.total-expenses::before,.total-balance::before{
+    content: '$';
+}
+
+
+.ex-header{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 120px 20px 20px;
+    margin-top: 10px;
+    background: #999;
+    border-radius: 5px;
+}
+
+.all-expenses{
+    width: 95%;
+    height: fit-content;
+}
+
+.all-expenses .empty{
+    border: 2px solid #555;
+    width: 95%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+    display: none;
+}
+.all-expenses .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid rgba(51, 51, 51, 0.582);
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.ex-detail{
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    justify-content: space-between;
+    margin-left: 15%
+}
+
+
+/* ---------- */
+
+.hide{
+    display: none;
+    transition: all 0.4s ease-in-out;
+
+}
+.active{
+    display: block;
+}
+
+@media  (max-width: 1200px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    main{
+        flex-direction: column;
+        height: fit-content;
+        margin: 0px;
+        padding: 0px;
+    }
+    form{
+        position: relative;
+        min-width: 285px;
+    }
+    .submit{
+        left: 50%;
+    }
+    .show-info{
+        display: contents;
+    }
+}
